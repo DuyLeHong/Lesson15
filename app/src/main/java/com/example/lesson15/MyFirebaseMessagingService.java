@@ -89,27 +89,27 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
      * B) User uninstalls/reinstalls the app
      * C) User clears app data
      */
-    @Override
-    public void onNewToken(String token) {
-        Log.d(TAG, "Refreshed token: " + token);
-
-        // If you want to send messages to this application instance or
-        // manage this apps subscriptions on the server side, send the
-        // FCM registration token to your app server.
-        sendRegistrationToServer(token);
-    }
+//    @Override
+//    public void onNewToken(String token) {
+//        Log.d(TAG, "Refreshed token: " + token);
+//
+//        // If you want to send messages to this application instance or
+//        // manage this apps subscriptions on the server side, send the
+//        // FCM registration token to your app server.
+//        sendRegistrationToServer(token);
+//    }
     // [END on_new_token]
 
     /**
      * Schedule async work using WorkManager.
      */
-    private void scheduleJob() {
-        // [START dispatch_job]
-        OneTimeWorkRequest work = new OneTimeWorkRequest.Builder(MyWorker.class)
-                .build();
-        WorkManager.getInstance(this).beginWith(work).enqueue();
-        // [END dispatch_job]
-    }
+//    private void scheduleJob() {
+//        // [START dispatch_job]
+//        OneTimeWorkRequest work = new OneTimeWorkRequest.Builder(MyWorker.class)
+//                .build();
+//        WorkManager.getInstance(this).beginWith(work).enqueue();
+//        // [END dispatch_job]
+//    }
 
     /**
      * Handle time allotted to BroadcastReceivers.
@@ -126,9 +126,9 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
      *
      * @param token The new token.
      */
-    private void sendRegistrationToServer(String token) {
-        // TODO: Implement this method to send token to your app server.
-    }
+//    private void sendRegistrationToServer(String token) {
+//        // TODO: Implement this method to send token to your app server.
+//    }
 
     /**
      * Create and show a simple notification containing the received FCM message.

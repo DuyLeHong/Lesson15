@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         // FCM:
 
-        FirebaseMessaging.getInstance().subscribeToTopic("weather")
+        FirebaseMessaging.getInstance().subscribeToTopic("lesson15")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Remote Config keys
     private static final String LOADING_PHRASE_CONFIG_KEY = "loading_phrase";
-    private static final String WELCOME_MESSAGE_KEY = "welcome_message";
-    private static final String WELCOME_MESSAGE_CAPS_KEY = "welcome_message_caps";
+    private static final String WELCOME_MESSAGE_KEY = "lesson15_welcome_mess";
+    private static final String WELCOME_MESSAGE_CAPS_KEY = "lesson15_inhoa";
 
     /**
      * Fetch a welcome message from the Remote Config service, and then activate it.

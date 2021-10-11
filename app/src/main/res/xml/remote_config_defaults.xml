@@ -2,14 +2,14 @@
 <defaultsMap>
     <entry>
         <key>loading_phrase</key>
-        <value>...</value>
+        <value>Dang load ...</value>
     </entry>
     <entry>
-        <key>welcome_message_caps</key>
+        <key>lesson15_inhoa</key>
         <value>false</value>
     </entry>
     <entry>
-        <key>welcome_message</key>
+        <key>lesson15_welcome_mess</key>
         <value>Welcome to my awesome app!</value>
     </entry>
 </defaultsMap>
