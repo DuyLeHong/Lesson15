@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lesson15</string>
+    <string name="default_notification_channel_id">FCM mess channel</string>
+</resources>
